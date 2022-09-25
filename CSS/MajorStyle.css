@@ -28,7 +28,7 @@ nav
 
 nav a 
 {
-	width: 16.39%;
+	width: 24.5%;
 	background: #2C2D2E;
 	color: #fff;
 	text-decoration: none;
@@ -36,6 +36,11 @@ nav a
 	font-size: 20px;
 	text-align: center;
 
+}
+
+nav a:hover
+{
+	background: #363738;
 }
 
 main 
@@ -55,11 +60,6 @@ a
 {
 	color: white;
 	text-decoration: none;
-}
-
-nav a:hover
-{
-	background: #363738;
 }
 
 table
