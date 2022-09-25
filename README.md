@@ -1,2 +1,2 @@
 # DEADLYLANDS
-![DEADLYLANDS](http://url/art.png)
+![DEADLYLANDS](https://github.com/DARKNEET69/DEADLYLANDS/art.png)
