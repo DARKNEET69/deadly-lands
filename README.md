@@ -1,2 +1,2 @@
 # DEADLYLANDS
-![alt text](http://url/art.png)
+![](http://url/art.png)
