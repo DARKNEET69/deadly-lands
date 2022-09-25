@@ -1,2 +1,2 @@
 # DEADLYLANDS
-![](http://url/art.png)
+![DEADLYLANDS](http://url/art.png)
