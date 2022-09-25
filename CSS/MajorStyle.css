@@ -1,0 +1,80 @@
+body
+{
+	font-family: 'Calibri';
+	background: #19191A;
+	color: #fff;
+}
+
+header, main, footer 
+{
+  margin: 0 auto;
+  width: 900px;
+}
+
+.logo 
+{
+	font-size: 70px;
+	width: 100%;
+	text-align: center;
+}
+
+nav
+{	
+	display: flex;
+	justify-content: space-between;
+	width: 900px;
+	margin-top: 1em;
+}
+
+nav a 
+{
+	width: 16.39%;
+	background: #2C2D2E;
+	color: #fff;
+	text-decoration: none;
+	padding: 1% 0;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+main 
+{
+	background: #19191A;
+	min-height: 720px;	
+}
+
+footer 
+{
+	background: #2C2D2E;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+a
+{
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	background: #363738;
+}
+
+table
+{
+	border-collapse: collapse;
+	margin-top: 2rem;
+}
+
+table tr, td
+{
+	border: 2px solid grey;
+	padding: 1px;
+}
+
+.table_header td
+{
+	text-align: center;
+}
