@@ -1,7 +1,10 @@
 body
 {
 	font-family: 'Calibri';
-	background: #19191A;
+	background-image: url(../Resources/Pictures/art.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 	color: #fff;
 }
 
@@ -35,7 +38,6 @@ nav a
 	padding: 1% 0;
 	font-size: 20px;
 	text-align: center;
-
 }
 
 nav a:hover
@@ -43,38 +45,8 @@ nav a:hover
 	background: #363738;
 }
 
-main 
-{
-	background: #19191A;
-	min-height: 720px;	
-}
-
-footer 
-{
-	background: #2C2D2E;
-	padding: 1rem 0;
-	text-align: center;
-}
-
 a
 {
 	color: white;
 	text-decoration: none;
-}
-
-table
-{
-	border-collapse: collapse;
-	margin-top: 2rem;
-}
-
-table tr, td
-{
-	border: 2px solid grey;
-	padding: 1px;
-}
-
-.table_header td
-{
-	text-align: center;
 }
