@@ -1,7 +1,7 @@
 body
 {
 	font-family: 'Calibri';
-	background-image: url(../Resources/Pictures/art.png);
+	background-image: url(../resources/pictures/art.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
