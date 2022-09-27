@@ -1,0 +1,56 @@
+body
+{
+	font-family: 'Calibri';
+	background-image: url(../resources/pictures/art.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	color: #fff;
+}
+
+header, main, footer 
+{
+  margin: 0 auto;
+  width: 900px;
+}
+
+.logo 
+{
+	font-size: 70px;
+	width: 100%;
+	text-align: center;
+}
+
+nav
+{	
+	display: flex;
+	justify-content: space-between;
+	width: 900px;
+	margin-top: 1em;
+}
+
+nav a 
+{
+	width: 24.5%;
+	background: #2C2D2E;
+	color: #fff;
+	opacity: 0.9;
+	text-decoration: none;
+	padding: 1% 0;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 1px solid #404040;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
+nav a:hover
+{
+	background: #363738;
+}
+
+a
+{
+	color: white;
+	text-decoration: none;
+}
