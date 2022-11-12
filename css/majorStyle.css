@@ -1,56 +1,128 @@
+/*
+	ЦВЕТОВАЯ СХЕМА (ТЕМНАЯ):
+	
+	page-bg: #141414
+	block-bg: #282828
+	element-bg: #505050	
+	text: #dcdcdc
+
+*/
+
+
 body
 {
 	font-family: 'Calibri';
-	background-image: url(../resources/pictures/art.png);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	color: #fff;
+	background-color: #141414;
+	color: #dcdcdc;
+	margin: 0%;
 }
 
-header, main, footer 
+header
 {
-  margin: 0 auto;
-  width: 900px;
+  	width: 100%;
+	height: 50px;
+	position: fixed;
+  	background: #282828;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	z-index: 10;
 }
 
-.logo 
-{
-	font-size: 70px;
-	width: 100%;
-	text-align: center;
-}
-
-nav
+.body-grid-container
 {	
+	display: grid;
+	grid-template-columns: 1fr 200px 600px 200px 1fr;
+	grid-gap: 10px;
+}
+
+.header-grid-container
+{	
+	display: grid;
+	grid-template-columns: 1fr 200px 600px 200px 1fr;
+	grid-gap: 10px;
+	height: 100%;
+}
+
+.logo, .header-title
+{
+	height: 50px;
 	display: flex;
 	justify-content: space-between;
-	width: 900px;
-	margin-top: 1em;
+	align-items: center;
+	font-size: 20px;
+}
+
+.ya-site-form
+{
+	width: 50%;
 }
 
 nav a 
 {
-	width: 24.5%;
-	background: #2C2D2E;
-	color: #fff;
-	opacity: 0.9;
 	text-decoration: none;
-	padding: 1% 0;
 	font-size: 20px;
-	text-align: center;
-	border-bottom: 1px solid #404040;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 5px;
-}
-
-nav a:hover
-{
-	background: #363738;
 }
 
 a
 {
-	color: white;
+	color: #dcdcdc;
 	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.left-bar
+{
+	justify-self: end;	
+	width: 100%;
+	position: sticky;
+	top: 0;
+    height: 100vh;
+	padding-top: 60px;
+}
+
+.right-bar
+{
+	width: 100%;
+	position: sticky;
+	top: 0;
+    height: 100vh;
+	padding-top: 60px;
+}
+
+.right-bar img
+{
+	width: 100%;
+	height: auto;
+}
+
+.content-bar
+{
+	width: 100%;
+	padding-top: 60px;
+}
+
+.block-element
+{
+	background: #282828;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.block-element-image
+{
+	background: #282828;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
+.image-element
+{
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
