@@ -51,6 +51,12 @@ header
 	font-size: 20px;
 }
 
+.logo img
+{
+	max-height: 100%;
+	width: auto;
+}
+
 .ya-site-form
 {
 	width: 50%;
@@ -122,6 +128,8 @@ a:hover
 
 .image-element
 {
+	max-width: 100%;
+	height: auto;
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
