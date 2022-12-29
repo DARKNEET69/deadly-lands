@@ -1,0 +1,64 @@
+<nav class="navbar">
+    <header>
+        <a href="" class="nav-block">
+            <img class="nav-icon" src="{{root-path}}/resources/images/img3.jpg">
+            <span class="nav-text"> DEADLY LANDS </span>
+        </a>
+    </header>
+    <div class="menu-bar">
+        <a href="{{root-path}}/modules/updates/" class="nav-block">
+            <img class="nav-icon" src="{{root-path}}/resources/icons/news.svg">
+            <span class="nav-text"> ОБНОВЛЕНИЯ </span>
+        </a>
+        <a href="{{root-path}}/modules/rulebooks" class="nav-block">
+            <img class="nav-icon" src="{{root-path}}/resources/icons/book.svg">
+            <span class="nav-text"> РУЛБУКИ </span>
+        </a>
+        <a href="{{root-path}}/modules/updates/" class="nav-block">
+            <img class="nav-icon" src="{{root-path}}/resources/icons/settings.svg">
+            <span class="nav-text"> ГЕНЕРАТОРЫ </span>
+        </a> 
+        <a href="{{root-path}}/modules/rulebooks" class="nav-block">
+            <img class="nav-icon" src="{{root-path}}/resources/icons/download.svg">
+            <span class="nav-text"> ИСТОЧНИКИ </span>
+        </a>
+        <a href="{{root-path}}/modules/updates/" class="nav-block">
+            <img class="nav-icon" src="{{root-path}}/resources/icons/faq.svg">
+            <span class="nav-text"> FAQ </span>
+        </a>     
+    </div>
+    <div class="bottom-bar">
+        <!--
+            <li class="">
+        <a href="#">
+            <i class="bx bx-log-out icon"></i>
+            <span class="text nav-text">Logout</span>
+        </a>
+        </li>
+        <li class="mode">
+        <div class="sun-moon">
+            <i class="bx bx-moon icon moon"></i>
+            <i class="bx bx-sun icon sun"></i>
+        </div>
+        <span class="mode-text text">Dark mode</span>
+        <div class="toggle-switch">
+            <span class="switch"></span>
+        </div>
+        </li>
+        -->        
+    </div>
+</nav>
+<script>
+    const body = document.querySelector('body'),
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    searchBtn = body.querySelector(".search-box"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
+
+    toggle.addEventListener("click" , () =>{sidebar.classList.toggle("close");})
+    searchBtn.addEventListener("click" , () =>{sidebar.classList.remove("close");})
+    modeSwitch.addEventListener("click" , () =>{body.classList.toggle("dark");
+    if (body.classList.contains("dark")){modeText.innerText = "Light mode";}
+    else {modeText.innerText = "Dark mode";}});
+</script>

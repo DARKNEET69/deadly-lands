@@ -1,0 +1,11 @@
+{
+  "InlineTemplateStart": "[[",
+  "InlineTemplateEnd": "]]",
+  "InlineParameterStart": "{{",
+  "InlineParameterEnd": "}}",
+  "InlineLoopStart": "[{",
+  "InlineLoopEnd": "}]",
+  "InlineParameterSeparator": ",",
+  "InlineParameterAssignment": "=",
+  "InlineParameterValue": "\u0022"
+}
