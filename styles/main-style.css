@@ -122,6 +122,13 @@ section
 	display:none
 }
 
+a:active, a:hover, a 
+{
+  	text-decoration: none;
+	text-decoration: underline;
+  	color: var(--text-dark-color);
+}
+
 .block-element
 {
 	background: var(--block-bg-dark-color);
