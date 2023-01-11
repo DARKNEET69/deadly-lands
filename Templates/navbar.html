@@ -1,28 +1,28 @@
-<nav class="navbar">
+<nav class="navbar close">
     <header>
-        <a href="" class="nav-block">
+        <div class="nav-block toggle">
             <img class="nav-icon" src="{{root-path}}/resources/images/img3.jpg">
             <span class="nav-text"> DEADLY LANDS </span>
-        </a>
+        </div>
     </header>
     <div class="menu-bar">
         <a href="{{root-path}}/modules/updates/" class="nav-block">
             <img class="nav-icon" src="{{root-path}}/resources/icons/news.svg">
             <span class="nav-text"> ОБНОВЛЕНИЯ </span>
         </a>
-        <a href="{{root-path}}/modules/rulebooks" class="nav-block">
+        <a href="{{root-path}}/modules/rulebooks/" class="nav-block">
             <img class="nav-icon" src="{{root-path}}/resources/icons/book.svg">
             <span class="nav-text"> РУЛБУКИ </span>
         </a>
-        <a href="{{root-path}}/modules/updates/" class="nav-block">
+        <a href="{{root-path}}/modules/generators/" class="nav-block">
             <img class="nav-icon" src="{{root-path}}/resources/icons/settings.svg">
             <span class="nav-text"> ГЕНЕРАТОРЫ </span>
         </a> 
-        <a href="{{root-path}}/modules/rulebooks" class="nav-block">
+        <a href="{{root-path}}/modules/sources/" class="nav-block">
             <img class="nav-icon" src="{{root-path}}/resources/icons/download.svg">
             <span class="nav-text"> ИСТОЧНИКИ </span>
         </a>
-        <a href="{{root-path}}/modules/updates/" class="nav-block">
+        <a href="{{root-path}}/modules/faq/" class="nav-block">
             <img class="nav-icon" src="{{root-path}}/resources/icons/faq.svg">
             <span class="nav-text"> FAQ </span>
         </a>     
@@ -49,16 +49,9 @@
     </div>
 </nav>
 <script>
-    const body = document.querySelector('body'),
-    sidebar = body.querySelector('nav'),
-    toggle = body.querySelector(".toggle"),
-    searchBtn = body.querySelector(".search-box"),
-    modeSwitch = body.querySelector(".toggle-switch"),
-    modeText = body.querySelector(".mode-text");
+    const body = document.querySelector('body');
+    const navbar = body.querySelector(".navbar");
+    const toggle = body.querySelector(".toggle");
 
-    toggle.addEventListener("click" , () =>{sidebar.classList.toggle("close");})
-    searchBtn.addEventListener("click" , () =>{sidebar.classList.remove("close");})
-    modeSwitch.addEventListener("click" , () =>{body.classList.toggle("dark");
-    if (body.classList.contains("dark")){modeText.innerText = "Light mode";}
-    else {modeText.innerText = "Dark mode";}});
+    toggle.addEventListener("click", ()=>{navbar.classList.toggle("close");})
 </script>
