@@ -124,13 +124,19 @@ section
 
 a:active, a:hover, a 
 {
+  	text-decoration: underline;
+  	color: var(--text-dark-color);
+}
+
+a:active.block-element, a:hover.block-element, a.block-element, a:active.nav-block, a:hover.nav-block, a.nav-block
+{
   	text-decoration: none;
-	text-decoration: underline;
   	color: var(--text-dark-color);
 }
 
 .block-element
 {
+	width: 100%;
 	background: var(--block-bg-dark-color);
 	box-shadow: var(--block-box-shadow);
 	border-radius: 10px;
@@ -138,13 +144,13 @@ a:active, a:hover, a
 	margin-bottom: 10px;
 }
 
-.block-element .title
+.block-title
 {
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
 
-.block-element .text
+.block-text
 {
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -167,6 +173,29 @@ a:active, a:hover, a
     -moz-border-radius: 5px;
     border-radius: var(--border-radius);
 }
+
+table 
+{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+  
+td 
+{
+	border-style: none solid solid none;
+	border-width: 1px;
+	padding: 5px;
+}
+
+tr:first-child td:first-child { border-top-left-radius: 5px; }
+tr:first-child td:last-child { border-top-right-radius: 5px; }
+
+tr:last-child td:first-child { border-bottom-left-radius: 5px; }
+tr:last-child td:last-child { border-bottom-right-radius: 5px; }
+
+tr:first-child td { border-top-style: solid; }
+tr td:first-child { border-left-style: solid; }
 
 @media all and (orientation: landscape)
 {
