@@ -31,7 +31,11 @@
 
 body
 {
-	font-family: 'Calibri';
+	font-family: "Amatic SC", "Arial";
+	font-size: 18px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	font-weight: 550;
 	background-image: var(--bg-image);
 	transition: background-image 3s;
 	background-size: cover;
