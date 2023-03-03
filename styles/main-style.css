@@ -5,7 +5,7 @@
 	--element-bg-dark-color: rgba(50, 50, 50, 0.95);
 	--text-dark-color: #dcdcdc;
 	--block-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
-	--bg-image: url(../resources/images/bg1.jpg);
+	--bg-image: url(../resources/images/bg1.jpg) 0 0 / cover;
 	--header-height: 50px;
 	--navbar-width: 200px;
 	--border-radius: 10px;
