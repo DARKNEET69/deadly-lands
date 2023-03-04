@@ -1,6 +1,6 @@
 :root 
 {
-	--page-bg-dark-color: #141414;
+	--page-bg-dark-color: #000;
 	--block-bg-dark-color: rgba(28, 28, 28, 0.95);
 	--element-bg-dark-color: rgba(50, 50, 50, 0.95);
 	--text-dark-color: #dcdcdc;
@@ -36,6 +36,7 @@ body
 	letter-spacing: 2px;
 	word-spacing: 2px;
 	font-weight: 550;
+	background-image: url(../resources/images/bg2.jpg);
 	background-image: var(--bg-image);
 	transition: background-image 3s;
 	background-size: cover;
@@ -77,9 +78,12 @@ section
     height: 100%;
     width: calc(var(--navbar-width) - 20px);
     padding: 10px;
-    background: var(--block-bg-dark-color);
     z-index: 100;
-	box-shadow: var(--block-box-shadow);
+
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .navbar.close
@@ -140,9 +144,11 @@ a:active.block-element, a:hover.block-element, a.block-element, a:active.nav-blo
 
 .block-element
 {
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 	width: 100%;
-	background: var(--block-bg-dark-color);
-	box-shadow: var(--block-box-shadow);
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 10px;
