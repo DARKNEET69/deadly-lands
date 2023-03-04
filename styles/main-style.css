@@ -106,7 +106,7 @@ section
 
 .nav-block:hover
 {
-	background: var(--element-bg-dark-color);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .nav-block .nav-icon
