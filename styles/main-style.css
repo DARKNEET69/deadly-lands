@@ -31,11 +31,9 @@
 
 body
 {
-	font-family: "Amatic SC", "Arial";
+	font-family: 'Neucha', "Arial";
 	font-size: 18px;
-	letter-spacing: 2px;
-	word-spacing: 2px;
-	font-weight: 550;
+	letter-spacing: 1px;
 	background-image: url(../resources/images/bg2.jpg);
 	background-image: var(--bg-image);
 	transition: background-image 3s;
