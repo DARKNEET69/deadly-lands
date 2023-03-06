@@ -32,7 +32,9 @@
 
 body
 {
-	/*width: fit-content;*/
+	min-width: fit-content;
+	max-width: -webkit-fill-available;
+	width: auto;
 	font-family: 'Neucha', "Arial";
 	font-size: 18px;
 	letter-spacing: 1px;
