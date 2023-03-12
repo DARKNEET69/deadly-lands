@@ -272,15 +272,16 @@ a:active.block-element, a:hover.block-element, a.block-element, a:active.nav-blo
 }
 
 .block-element-image {
+	overflow: hidden;
 	background: var(--block-bg-dark-color);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-	border-radius: var(--border-radius);
+	border-radius: calc(var(--border-radius) / 2);
+	-webkit-border-radius: calc(var(--border-radius) / 2);
 }
 
 .image-element {
 	max-width: 100%;
 	height: auto;
-    border-radius: var(--border-radius);
 }
 
 table {
