@@ -1,5 +1,5 @@
 https://darkneet69.github.io/deadly-lands/modules/updates/index.html
-https://darkneet69.github.io/deadly-lands/modules/rulebooks/index.html
+https://darkneet69.github.io/deadly-lands/modules/rulebook/index.html
 https://darkneet69.github.io/deadly-lands/modules/generators/index.html
 https://darkneet69.github.io/deadly-lands/modules/generators/gun-generator.html
 https://darkneet69.github.io/deadly-lands/modules/generators/melee-generator.html
