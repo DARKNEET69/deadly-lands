@@ -284,6 +284,22 @@ a:active.block-element, a:hover.block-element, a.block-element, a:active.nav-blo
 	height: auto;
 }
 
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid #f86466;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 table {
     width:100%;
 	border-collapse: separate;
