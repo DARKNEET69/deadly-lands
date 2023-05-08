@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        [[Templates/head.html, title = РЕДАКТОР ТЕКСТА, url = https://darkneet69.github.io/deadly-lands/modules/editors/text-editor.html, root-path = ../..]]
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+        <link rel="stylesheet" href="../../styles/text-editor-style.css" rel="stylesheet">
+    </head>
+    <body>
+        [[Templates/navbar.html, root-path = ../..]]
+        <div class="content-outer">
+            <div class="content-inner">
+                <div class="content-container">
+                    <div class="block-element">
+                        <div id="summernote"></div>
+                        <script>
+                            $('#summernote').summernote({
+                                dialogsInBody: true,
+                                disableDragAndDrop: true,
+                                placeholder: 'Текст...',
+                                tabsize: 2,
+                                height: window.screen.height * 0.8,
+                                focus: true,
+                                toolbar: [
+                                ['style', ['style']],
+                                ['font', ['bold','italic', 'underline', 'clear']],
+                                ['color', ['color']],
+                                ['para', ['ul', 'ol', 'paragraph']],
+                                ['table', ['table']],
+                                ['insert', ['link', 'picture', 'video']],
+                                ['view', ['codeview']],
+                                ['misc', ['undo', 'redo']],
+                                ]
+                            });
+                            $('#summernote').summernote('fontName', 'Neucha');
+                            $('#summernote').summernote('foreColor', 'white');
+                        </script>
+                        <style>
+                            .note-editor .note-toolbar, .note-popover .popover-content {
+                                padding: 0 0 5px 0;
+                            }
+                            .note-editor.note-airframe .note-editing-area .note-editable, .note-editor.note-frame .note-editing-area .note-editable {
+                                padding: 0;
+                                overflow: auto;
+                                word-wrap: break-word;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="subbar-outer">
+                    <div class="subbar-inner">
+                        <div class="block-element">
+                            <h4 class="block-title" style="height: 180px;text-align: center;"><br><br><br> ЗДЕСЬ МОГЛА БЫТЬ ВАША РЕКЛАМА </h4>
+                        </div>
+                    </div>
+                </div>                   
+            </div>
+        </div>        
+    </body>
+</html>

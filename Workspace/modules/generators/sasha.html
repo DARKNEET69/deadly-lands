@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        [[Templates/head.html, title = ГЕНЕРАТОР ПУШЕК, url = https://darkneet69.github.io/deadly-lands/modules/generators/gun-generator.html, root-path = ../..]]        
+    </head>
+    <body>
+        [[Templates/navbar.html, root-path = ../..]]
+        <div class="content-outer">
+            <div class="content-inner">
+                <div class="content-container">
+                    <div class="block-element">
+                        <h1>САША - Создай Штуку. Основы и материалы</h1>
+                        <p><strong>Основные механики созданий штуки</strong></p>
+                        <p>Создание штуки описывает способ создания любого предмета из любого материала, имея подходящий уровень навыка создания.</p>
+                        <p>Для создания&nbsp;какой-либо&nbsp;штуки необходимо сначала определить что будет из себя представлять данная штука. Это может быть орудие, инструмент, автомобиль и т.д.</p>
+                        <p>Определившись с типом штуки далее определим критические и побочные компоненты штуки.</p>
+                        <p>Критические компоненты - это те компоненты без которых штука не является штукой. Критические компоненты главная движущая сила штуки. Качество критических компонентов определяет основные параметры&nbsp;выходимой&nbsp;штуки.</p>
+                        <p>Побочные компоненты - это всяческие навороты, которые позволяют лучше&nbsp;обращаться&nbsp;со штукой, а также получать дополнительные свойства,&nbsp;оговорившись&nbsp;с&nbsp;гм-ом.</p>
+                        <p>Какие параметры будут повышаться и с каким шагом определяется в специальных статьях или лично с&nbsp;гм-ом&nbsp;во время или перед игрой.</p>
+                        <p><strong>Создание штуки</strong></p>
+                        <p>Определившись с тем, что вы хотите сделать далее следует непосредственно производство штуки. Определив критические и&nbsp;побочные&nbsp;компоненты далее следует указать вес и объем производимой штуки. За каждые два очка веса или объема штуке можно добавить компонент или увеличить количество материалов&nbsp;необходимых&nbsp;для производства на один.</p>
+                        <p>У каждой штуки исходя из логики необходимо минимум одна критическая и побочная часть. Некоторым более комплексным штукам необходимо критических компонентов больше чем один. Например, для производства автомобиля нужно множество критических компонентов - двигатель, шасси, рама и т.п. Даже так, это все условность и вы вправе делать что пожелаете, если договоритесь с вашим&nbsp;гм-ом.</p>
+                        <p>Определив количество критических и побочных компонентов, а также сколько необходимо для них материалов для производства далее&nbsp;приступаем&nbsp;к фазе распределения материалов и производства.</p>
+                        <p>Каждый&nbsp;материал, что&nbsp;вы&nbsp;получаете путешествовать&nbsp;по миру имеет определенное качество. Качеством является модификатор очков части, которые определяются&nbsp;при поднятии&nbsp;материала. Количество очков части определяется по формуле - D12 + Модификатор очков части + навыки мусорщика&nbsp;повышающее&nbsp;качество частей.</p>
+                        <p>Определив очки частей далее необходимо их распределить. Распределяем материалы по компонентам и суммируем там где необходимо несколько материалов для производства компонента.</p>
+                        <p>Далее, когда все материалы распределены и все очки частей&nbsp;подсчитаны,&nbsp;распределяем&nbsp;очки частей на улучшение показателей производимой штуки. За каждые два очка части можно повысить&nbsp;какой-либо&nbsp;параметр&nbsp;соответствующего&nbsp;компонента.</p>
+                        <p>Далее когда все&nbsp;распределено&nbsp;и готово к сборке вы определяете сложность производства такой штуки. Сложность определяется по следующей формуле - D4 + (Сумма всех очков частей)/2 + Модификатор изобретателя + Модификатор&nbsp;внешних&nbsp;условий.</p>
+                        <p>При высокой сложности производства вам на выручку могут прийти различные навыки и модификаторы, которые увеличат ваш шанс на успешное производство данной штуки.</p>
+                        <p><strong>Список базовых материалов</strong></p>
+                        <table style="border-collapse: collapse; width: 100%; height: 234px;" border="1">
+                        <tbody>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Материал</td>
+                        <td style="width: 50%; height: 18px;">Модификатор качества</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Камень с пустошей</td>
+                        <td style="width: 50%; height: 18px;">-10</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Железная пластина</td>
+                        <td style="width: 50%; height: 18px;">-4</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Исскуственное дерево</td>
+                        <td style="width: 50%; height: 18px;">-6</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Ткань</td>
+                        <td style="width: 50%; height: 18px;">-7</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Кожа</td>
+                        <td style="width: 50%; height: 18px;">-5</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Сплав металлов</td>
+                        <td style="width: 50%; height: 18px;">-1</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Древние металлы</td>
+                        <td style="width: 50%; height: 18px;">+0</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Необработанный ресурс</td>
+                        <td style="width: 50%; height: 18px;">*-2</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Заряженный ресурс</td>
+                        <td style="width: 50%; height: 18px;">*+4</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Материалы предтечей</td>
+                        <td style="width: 50%; height: 18px;">*+6</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Нестандартный материал</td>
+                        <td style="width: 50%; height: 18px;">*-1</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 50%; height: 18px;">Комплексный материал</td>
+                        <td style="width: 50%; height: 18px;">*первый материал + второй материал</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        <p><strong>Как определить шаг прокачки компонентов</strong></p>
+                        <p>Хоть вы и распределяете очки частей, но не всегда получается определить насколько сильней должна становиться штука за каждый два очка части. Ниже описана методика определения шага прокачки. Данная методика не является обязательной и может служить лишь примерным нахождение шага прокачки.</p>
+                        <p>Первым делом необходимо выписать все характеристики штуки, которые вы только можете представить.</p>
+                        <p>В качестве примера приведем огнестрельное оружие.</p>
+                        <p>Список характеристик огнестрельного оружия -&nbsp;</p>
+                        <p>Урон, скорострельность, эффективная дальность, проблемы, прочность, колво модификаций, кол-во патрон в магазине</p>
+                        <p>К примеру мы хотим сделать пистолет весом и объемом 3/3. Таким образом нам необходимо три компонента. К примеру пистолет может состоять из одного критического и двух побочных компонентов. Или одного критического и одного побочного компонента из двух ресурсов.</p>
+                        <p>В нашем случае будет пистолет из двух побочных и одного критического компонента. Воспользовавшись фантазией представляем, что наш критический компонент рамка со спусковым механизмом, а побочные компоненты - рама ствола и рукоять.</p>
+                        <p>Исходя из выше описанного делаем выводы по увеличению характеристик.</p>
+                        <p>Вкладывая в Критический компонент мы усиливаем Урон (увеличивая обьем ствола), Скорострельность (качество спускового механизма), Прочность (усиление рамки и основных механизмов).</p>
+                        <p>Вкладывая в раму ствола мы усиливаем Эффективную дальность (длина и резьба в рамке), Проблему (продуманное строение), кол-во модификаций (планки на стволе).</p>
+                        <p>Вкладывая в рукоять мы усиливаем кол-во патронов в магазине (увеличенная рукоять), кол-во модифкаций (модификации рукояти).</p>
+                        <p>Определившись с соотношениями определим шаг прокачки для каждой характеристики за каждые два очка части. Ниже приведена табличка для примерного понимания.</p>
+                        <table style="border-collapse: collapse; width: 100%; height: 180px;" border="1">
+                        <tbody>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; text-align: center; height: 18px;">Шаг</td>
+                        <td style="width: 8.83458%; height: 18px; text-align: center;">Урон</td>
+                        <td style="width: 12.594%; height: 18px; text-align: center;">Скор-ть</td>
+                        <td style="width: 14.2857%; height: 18px; text-align: center;">Дал-ть</td>
+                        <td style="width: 14.2857%; height: 18px; text-align: center;">Проб-мы</td>
+                        <td style="width: 14.2857%; height: 18px; text-align: center;">Проч-ть</td>
+                        <td style="width: 14.2857%; height: 18px; text-align: center;">Моды</td>
+                        <td style="width: 14.2857%; height: 18px; text-align: center;">Магазин</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; height: 18px; text-align: center;">1(2)</td>
+                        <td style="width: 8.83458%; height: 18px;">1d4</td>
+                        <td style="width: 12.594%; height: 18px;">1</td>
+                        <td style="width: 14.2857%; height: 18px;">10</td>
+                        <td style="width: 14.2857%; height: 18px;">Основное</td>
+                        <td style="width: 14.2857%; height: 18px;">2</td>
+                        <td style="width: 14.2857%; height: 18px;">1</td>
+                        <td style="width: 14.2857%; height: 18px;">1</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; height: 18px; text-align: center;">2(4)</td>
+                        <td style="width: 8.83458%; height: 18px;">1d6</td>
+                        <td style="width: 12.594%; height: 18px;">2</td>
+                        <td style="width: 14.2857%; height: 18px;">25</td>
+                        <td style="width: 14.2857%; height: 18px;">Основное</td>
+                        <td style="width: 14.2857%; height: 18px;">4</td>
+                        <td style="width: 14.2857%; height: 18px;">1</td>
+                        <td style="width: 14.2857%; height: 18px;">2</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; height: 18px; text-align: center;">3(6)</td>
+                        <td style="width: 8.83458%; height: 18px;">2d4</td>
+                        <td style="width: 12.594%; height: 18px;">3</td>
+                        <td style="width: 14.2857%; height: 18px;">50</td>
+                        <td style="width: 14.2857%; height: 18px;">Основное</td>
+                        <td style="width: 14.2857%; height: 18px;">6</td>
+                        <td style="width: 14.2857%; height: 18px;">1</td>
+                        <td style="width: 14.2857%; height: 18px;">5</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; height: 18px; text-align: center;">4(8)</td>
+                        <td style="width: 8.83458%; height: 18px;">3d4 1d8</td>
+                        <td style="width: 12.594%; height: 18px;">4</td>
+                        <td style="width: 14.2857%; height: 18px;">75</td>
+                        <td style="width: 14.2857%; height: 18px;">Бонусное</td>
+                        <td style="width: 14.2857%; height: 18px;">8</td>
+                        <td style="width: 14.2857%; height: 18px;">2</td>
+                        <td style="width: 14.2857%; height: 18px;">8</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; height: 18px; text-align: center;">5(10)</td>
+                        <td style="width: 8.83458%; height: 18px;">2d6</td>
+                        <td style="width: 12.594%; height: 18px;">5</td>
+                        <td style="width: 14.2857%; height: 18px;">100</td>
+                        <td style="width: 14.2857%; height: 18px;">Бонусное</td>
+                        <td style="width: 14.2857%; height: 18px;">10</td>
+                        <td style="width: 14.2857%; height: 18px;">2</td>
+                        <td style="width: 14.2857%; height: 18px;">13</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; height: 18px; text-align: center;">6(12)</td>
+                        <td style="width: 8.83458%; height: 18px;">4d4 1d10</td>
+                        <td style="width: 12.594%; height: 18px;">6</td>
+                        <td style="width: 14.2857%; height: 18px;">125</td>
+                        <td style="width: 14.2857%; height: 18px;">Бонусное</td>
+                        <td style="width: 14.2857%; height: 18px;">12</td>
+                        <td style="width: 14.2857%; height: 18px;">2</td>
+                        <td style="width: 14.2857%; height: 18px;">17</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; height: 18px; text-align: center;">7(14)</td>
+                        <td style="width: 8.83458%; height: 18px;">3d6 2d8</td>
+                        <td style="width: 12.594%; height: 18px;">7</td>
+                        <td style="width: 14.2857%; height: 18px;">175</td>
+                        <td style="width: 14.2857%; height: 18px;">Свободное</td>
+                        <td style="width: 14.2857%; height: 18px;">14</td>
+                        <td style="width: 14.2857%; height: 18px;">3</td>
+                        <td style="width: 14.2857%; height: 18px;">21</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; height: 18px; text-align: center;">8(16)</td>
+                        <td style="width: 8.83458%; height: 18px;">1d12 4d6</td>
+                        <td style="width: 12.594%; height: 18px;">8</td>
+                        <td style="width: 14.2857%; height: 18px;">250</td>
+                        <td style="width: 14.2857%; height: 18px;">-</td>
+                        <td style="width: 14.2857%; height: 18px;">16</td>
+                        <td style="width: 14.2857%; height: 18px;">-</td>
+                        <td style="width: 14.2857%; height: 18px;">30</td>
+                        </tr>
+                        <tr style="height: 18px;">
+                        <td style="width: 7.14285%; height: 18px; text-align: center;">9(18)</td>
+                        <td style="width: 8.83458%; height: 18px;">2d10 3d8</td>
+                        <td style="width: 12.594%; height: 18px;">9</td>
+                        <td style="width: 14.2857%; height: 18px;">500</td>
+                        <td style="width: 14.2857%; height: 18px;">-</td>
+                        <td style="width: 14.2857%; height: 18px;">18</td>
+                        <td style="width: 14.2857%; height: 18px;">-</td>
+                        <td style="width: 14.2857%; height: 18px;">45</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        <p>Урон - для минимального значения берется низший возможный урон с огнестрела и повышается увеличивая среднее значение урона. Для определения кубиков можно воспользоваться средним значением с дополнительными факторами.</p>
+                        <p>Скорострельность - увеличивается прямо пропорционально прокачке.</p>
+                        <p>Дальность - возрастает быстро с высокими значениями прокачки.</p>
+                        <p>Проблемы - за каждые три прокачки выходит на новую ступень. Максимум свободное действие.</p>
+                        <p>Прочность - за каждый шаг увеличивается в два раза от числа шага.</p>
+                        <p>Моды - за каждые три увеличивается на 1. Максимум 3.</p>
+                        <p>Магазин - Резко увеличивается при больших значениях. Можно не прокачивать, а договориться с гм-ом на использование магазинов.</p>
+                    </div>
+                </div>
+                <div class="subbar-outer">
+                    <div class="subbar-inner">
+                        <div class="block-element">
+                            <h4 class="block-title" style="height: 180px;text-align: center;"><br><br><br> ЗДЕСЬ МОГЛА БЫТЬ ВАША РЕКЛАМА </h4>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>        
+    </body>
+</html>

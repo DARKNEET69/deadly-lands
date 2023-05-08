@@ -1,0 +1,55 @@
+<div class="navbar-outer">
+    <nav class="navbar">
+        <header>
+            <div class="nav-block toggle">
+                <img class="nav-icon" src="{{root-path}}/resources/images/img3.jpg">
+                <span class="nav-text"> DEADLY LANDS </span>
+            </div>
+        </header>
+        <div class="menu-bar">
+            <a href="{{root-path}}/modules/updates/" class="nav-block">
+                <img class="nav-icon" src="{{root-path}}/resources/icons/news.svg">
+                <span class="nav-text"> ОБНОВЛЕНИЯ </span>
+            </a>
+            <a href="{{root-path}}/modules/rulebook/" class="nav-block">
+                <img class="nav-icon" src="{{root-path}}/resources/icons/book.svg">
+                <span class="nav-text"> РУЛБУК </span>
+            </a>
+            <a href="{{root-path}}/modules/generators/" class="nav-block">
+                <img class="nav-icon" src="{{root-path}}/resources/icons/settings.svg">
+                <span class="nav-text"> ГЕНЕРАТОРЫ </span>
+            </a> 
+            <a href="{{root-path}}/modules/sources/" class="nav-block">
+                <img class="nav-icon" src="{{root-path}}/resources/icons/download.svg">
+                <span class="nav-text"> ИСТОЧНИКИ </span>
+            </a>
+            <a href="{{root-path}}/modules/faq/" class="nav-block">
+                <img class="nav-icon" src="{{root-path}}/resources/icons/faq.svg">
+                <span class="nav-text"> FAQ </span>
+            </a>     
+        </div>
+    </nav>    
+    <script>
+        var screenWidth = window.screen.width;
+        var body = document.querySelector('body');
+        var navbar = body.querySelector(".navbar");
+        var toggle = body.querySelector(".toggle");
+
+        toggle.addEventListener("click", () => {
+            screenWidth = window.screen.width;          
+            if (screenWidth < 850) {
+                navbar.classList.toggle("close");
+            }
+            else if (navbar.classList.contains("close")) {
+            navbar.classList.toggle("close");
+            }      
+        });
+
+        if (screenWidth < 850 && !navbar.classList.contains("close")) {
+            navbar.classList.toggle("close");
+        }
+        else if (navbar.classList.contains("close")) {
+            navbar.classList.toggle("close");
+        }
+    </script>
+</div>
